@@ -32,11 +32,26 @@
 
 
 
-
+<br><br>
 <br><br>
 ___
 ___
 <br><br>
+<br><br>
 
-## llama.cpp 
+
+
+
+
+# DeepSeek-Coder-V2-Instruct
+
+
+<br><br>
+
+## DeepSeek-Coder-V2-Instruct-GGUF (llama.cpp)
 - https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF
+
+### Download
+```shell
+huggingface-cli download bartowski/DeepSeek-Coder-V2-Instruct-GGUF --include "DeepSeek-Coder-V2-Instruct-Q4_K_M.gguf/*" --local-dir "/home/userName/Projects/ai/resources/models/llm/deepseek"
+```
