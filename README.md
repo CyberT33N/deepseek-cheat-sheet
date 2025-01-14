@@ -19,3 +19,24 @@
 ### Notes:
 - For users with **A100 40GB GPUs**, additional throughput information may be needed for optimization.
 - The quantized version is recommended for setups with limited GPU memory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+___
+___
+<br><br>
+
+## llama.cpp 
+- https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF
