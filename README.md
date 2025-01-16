@@ -87,7 +87,11 @@
 ### Download
 - https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF
 ```shell
+# q8
 huggingface-cli download bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF --include "DeepSeek-Coder-V2-Lite-Instruct-Q8_0.gguf" --local-dir "/home/userName/Projects/ai/resources/models/llm/deepseek"
+
+# q6
+huggingface-cli download bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF --include "DeepSeek-Coder-V2-Lite-Instruct-Q6_K.gguf" --local-dir "/home/userName/Projects/ai/resources/models/llm/deepseek"
 ```
 
 
