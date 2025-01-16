@@ -149,7 +149,12 @@ llama_model_loader: - kv  41:              quantize.imatrix.chunks_count i32    
 ### Run
 ```shell
 cd /home/t33n/Projects/ai/LLM/RUNTIME/llama.cpp/build/bin/
-./llama-cli -m '/home/t33n/Projects/ai/resources/models/llm/deepseek/Coder V2 Lite/DeepSeek-Coder-V2-Lite-Instruct-Q6_K.gguf' -p "I believe the meaning of life is" -no-cnv -ngl 27
+
+# g6
+./llama-cli -m '/home/t33n/Projects/ai/resources/models/llm/deepseek/Coder V2 Lite/DeepSeek-Coder-V2-Lite-Instruct-Q6_K.gguf' -p "Create express.js hello world project" -no-cnv -ngl 27
+
+# g8
+./llama-cli -m '/home/t33n/Projects/ai/resources/models/llm/deepseek/Coder V2 Lite/DeepSeek-Coder-V2-Lite-Instruct-Q8_0.gguf' -p "Create express.js hello world project" -no-cnv -ngl 27
 ```
 - With RTX 4090 we can use alle 27 layer
 
