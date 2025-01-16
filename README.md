@@ -80,8 +80,24 @@
 ### Fazit:
 - **Modell-Empfehlungen:** Die Modelle mit weniger als 10 GB VRAM (wie IQ4_XS, IQ3_M, IQ2_XS) sind hervorragend für die RTX 4090 geeignet, ohne den VRAM zu überlasten. Modelle wie Q8_0 oder Q6_K_L liefern extreme Qualität, aber könnten die GPU unnötig stark auslasten, wenn du eine leichtere Nutzung anstrebst.
 
+
+
+<br><br>
+
+### Download
+- https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF
+```shell
+huggingface-cli download bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF --include "DeepSeek-Coder-V2-Lite-Instruct-Q8_0.gguf" --local-dir "/home/userName/Projects/ai/resources/models/llm/deepseek"
+```
+
+
+
+
+
   
 </details>
+
+
 
 
 
