@@ -7,9 +7,9 @@
 
 
 
+# DeepSeek Coder
 
-
-
+<details><summary>Click to expand..</summary>
 
 
 
@@ -49,6 +49,7 @@
 
 ## DeepSeek-Coder-V2-Lite-Instruct-GGUF (llama.cpp)
 - https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF
+- Perfect for RTX 4090
 
 <details><summary>Click to expand..</summary>
 
@@ -135,9 +136,11 @@ ___
 # DeepSeek-Coder-V2-Instruct
 
 
+
 <br><br>
 
 ## DeepSeek-Coder-V2-Instruct-GGUF (llama.cpp)
+- Too big for RTX 4090
 
 <details><summary>Click to expand..</summary>
 
@@ -167,3 +170,6 @@ huggingface-cli download bartowski/DeepSeek-Coder-V2-Instruct-GGUF --include "De
 
 </details>
 
+
+
+</details>
