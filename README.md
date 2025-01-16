@@ -49,9 +49,32 @@ ___
 <br><br>
 
 ## DeepSeek-Coder-V2-Instruct-GGUF (llama.cpp)
-- https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF
+
+<details><summary>Click to expand..</summary>
+
+# Details
+-  Q4_K_M not working on 4090 way too slow..
+
 
 ### Download
+- https://huggingface.co/bartowski/DeepSeek-Coder-V2-Instruct-GGUF
 ```shell
 huggingface-cli download bartowski/DeepSeek-Coder-V2-Instruct-GGUF --include "DeepSeek-Coder-V2-Instruct-Q4_K_M.gguf/*" --local-dir "/home/userName/Projects/ai/resources/models/llm/deepseek"
 ```
+
+
+| Modell                                             | Version     | VRAM (geschätzt) | Beschreibung                                                                                        | Eignung für RTX 4090                 |
+|----------------------------------------------------|-------------|------------------|----------------------------------------------------------------------------------------------------|--------------------------------------|
+| **DeepSeek-Coder-V2-Instruct-Q4_K_M.gguf**         | Q4_K_M      | 142.45 GB        | Gute Qualität, nutzt etwa 4.83 Bits pro Gewicht, empfohlen.                                          | Zu groß für RTX 4090                |
+| **DeepSeek-Coder-V2-Instruct-Q3_K_XL.gguf**        | Q3_K_XL     | 123.8 GB         | Experimentell, verwendet f16 für Einbettungs- und Ausgabewichtungen. Niedrigere Qualität, aber nutzbar. | Zu groß für RTX 4090                |
+| **DeepSeek-Coder-V2-Instruct-Q3_K_M.gguf**         | Q3_K_M      | 112.7 GB         | Relativ niedrige Qualität, aber nutzbar.                                                              | Zu groß für RTX 4090                |
+| **DeepSeek-Coder-V2-Instruct-Q2_K_L.gguf**         | Q2_K_L      | 87.5 GB          | Experimentell, verwendet f16 für Einbettungs- und Ausgabewichtungen. Niedrige Qualität, aber nutzbar.  | Eventuell zu groß für RTX 4090      |
+| **DeepSeek-Coder-V2-Instruct-Q2_K.gguf**           | Q2_K        | 86.0 GB          | Niedrige Qualität, aber nutzbar.                                                                     | Eventuell zu groß für RTX 4090      |
+| **DeepSeek-Coder-V2-Instruct-IQ2_XS.gguf**         | IQ2_XS      | 68.7 GB          | Niedrigere Qualität, nutzt SOTA-Techniken zur Nutzbarkeit.                                            | Gut geeignet für RTX 4090           |
+| **DeepSeek-Coder-V2-Instruct-IQ1_M.gguf**          | IQ1_M       | 52.7 GB          | Extrem niedrige Qualität, nicht empfohlen.                                                           | Gut geeignet für RTX 4090           |
+
+
+
+
+</details>
+
