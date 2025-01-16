@@ -81,7 +81,7 @@
 - **Modell-Empfehlungen:** Die Modelle mit weniger als 10 GB VRAM (wie IQ4_XS, IQ3_M, IQ2_XS) sind hervorragend für die RTX 4090 geeignet, ohne den VRAM zu überlasten. Modelle wie Q8_0 oder Q6_K_L liefern extreme Qualität, aber könnten die GPU unnötig stark auslasten, wenn du eine leichtere Nutzung anstrebst.
 
   
-</details>details>
+</details>
 
 
 
