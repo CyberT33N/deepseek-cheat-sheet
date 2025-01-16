@@ -96,6 +96,65 @@ huggingface-cli download bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF --includ
 ```
 
 
+# Details
+```
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = deepseek2
+llama_model_loader: - kv   1:                               general.name str              = DeepSeek-Coder-V2-Lite-Instruct
+llama_model_loader: - kv   2:                      deepseek2.block_count u32              = 27
+llama_model_loader: - kv   3:                   deepseek2.context_length u32              = 163840
+llama_model_loader: - kv   4:                 deepseek2.embedding_length u32              = 2048
+llama_model_loader: - kv   5:              deepseek2.feed_forward_length u32              = 10944
+llama_model_loader: - kv   6:             deepseek2.attention.head_count u32              = 16
+llama_model_loader: - kv   7:          deepseek2.attention.head_count_kv u32              = 16
+llama_model_loader: - kv   8:                   deepseek2.rope.freq_base f32              = 10000.000000
+llama_model_loader: - kv   9: deepseek2.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  10:                deepseek2.expert_used_count u32              = 6
+llama_model_loader: - kv  11:                          general.file_type u32              = 18
+llama_model_loader: - kv  12:        deepseek2.leading_dense_block_count u32              = 1
+llama_model_loader: - kv  13:                       deepseek2.vocab_size u32              = 102400
+llama_model_loader: - kv  14:           deepseek2.attention.kv_lora_rank u32              = 512
+llama_model_loader: - kv  15:             deepseek2.attention.key_length u32              = 192
+llama_model_loader: - kv  16:           deepseek2.attention.value_length u32              = 128
+llama_model_loader: - kv  17:       deepseek2.expert_feed_forward_length u32              = 1408
+llama_model_loader: - kv  18:                     deepseek2.expert_count u32              = 64
+llama_model_loader: - kv  19:              deepseek2.expert_shared_count u32              = 2
+llama_model_loader: - kv  20:             deepseek2.expert_weights_scale f32              = 1.000000
+llama_model_loader: - kv  21:             deepseek2.rope.dimension_count u32              = 64
+llama_model_loader: - kv  22:                deepseek2.rope.scaling.type str              = yarn
+llama_model_loader: - kv  23:              deepseek2.rope.scaling.factor f32              = 40.000000
+llama_model_loader: - kv  24: deepseek2.rope.scaling.original_context_length u32              = 4096
+llama_model_loader: - kv  25: deepseek2.rope.scaling.yarn_log_multiplier f32              = 0.070700
+llama_model_loader: - kv  26:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  27:                         tokenizer.ggml.pre str              = deepseek-llm
+llama_model_loader: - kv  28:                      tokenizer.ggml.tokens arr[str,102400]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  29:                  tokenizer.ggml.token_type arr[i32,102400]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  30:                      tokenizer.ggml.merges arr[str,99757]   = ["Ġ Ġ", "Ġ t", "Ġ a", "i n", "h e...
+llama_model_loader: - kv  31:                tokenizer.ggml.bos_token_id u32              = 100000
+llama_model_loader: - kv  32:                tokenizer.ggml.eos_token_id u32              = 100001
+llama_model_loader: - kv  33:            tokenizer.ggml.padding_token_id u32              = 100001
+llama_model_loader: - kv  34:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  35:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  36:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  37:               general.quantization_version u32              = 2
+llama_model_loader: - kv  38:                      quantize.imatrix.file str              = /models/DeepSeek-Coder-V2-Lite-Instru...
+llama_model_loader: - kv  39:                   quantize.imatrix.dataset str              = /training_data/calibration_datav3.txt
+llama_model_loader: - kv  40:             quantize.imatrix.entries_count i32              = 293
+llama_model_loader: - kv  41:              quantize.imatrix.chunks_count i32              = 139
+```
+- **27 layer (deepseek2.block_count)**
+
+<br><br>
+
+### Run
+```shell
+cd /home/t33n/Projects/ai/LLM/RUNTIME/llama.cpp/build/bin/
+./llama-cli -m '/home/t33n/Projects/ai/resources/models/llm/deepseek/Coder V2 Lite/DeepSeek-Coder-V2-Lite-Instruct-Q6_K.gguf' -p "I believe the meaning of life is" -no-cnv -ngl 27
+```
+- With RTX 4090 we can use alle 27 layer
+
+
+
 
 
 
