@@ -6,7 +6,7 @@
 - https://github.com/deepseek-ai/DeepSeek-R1
 
 <details><summary>Click to expand..</summary>
-</details>details>
+</details>
 
 
 
