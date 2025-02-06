@@ -30,6 +30,7 @@ ollama run deepseek-r1:32b
 
 # DeepSeek-R1-GGUF
 - https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main/DeepSeek-R1-Q8_0
+- https://huggingface.co/bartowski/DeepSeek-R1-GGUF
 
 <details><summary>Click to expand..</summary>
 
