@@ -9,16 +9,7 @@
 
 <details><summary>Click to expand..</summary>
 
-# Hardware Requirements
 
-| **Model**                             | **Parameters (B)** | **VRAM Requirement (GB)** | **Recommended GPU**                  |  
-|----------------------------------------|-------------------|--------------------------|--------------------------------------|  
-| DeepSeek-R1-Distill-Qwen-1.5B         | 1.5               | ~0.7                     | NVIDIA RTX 3060 12GB or higher      |  
-| DeepSeek-R1-Distill-Qwen-7B           | 7                 | ~3.3                     | NVIDIA RTX 3070 8GB or higher       |  
-| DeepSeek-R1-Distill-Llama-8B          | 8                 | ~3.7                     | NVIDIA RTX 3070 8GB or higher       |  
-| DeepSeek-R1-Distill-Qwen-14B          | 14                | ~6.5                     | NVIDIA RTX 3080 10GB or higher      |  
-| DeepSeek-R1-Distill-Qwen-32B          | 32                | ~14.9                    | NVIDIA RTX 4090 24GB                |  
-| DeepSeek-R1-Distill-Llama-70B         | 70                | ~32.7                    | NVIDIA RTX 4090 24GB (x2)           |  
 
 
 # Ollama
@@ -30,8 +21,39 @@ ollama run deepseek-r1:32b
 - 32b Works with 4090 but not fast. But it is okay :)  If you want faster resonse then try 14b
 
 
+
+
+
+
+<br><br>
+<br><br>
+
+# DeepSeek-R1-GGUF
+- https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main/DeepSeek-R1-Q8_0
+
+<details><summary>Click to expand..</summary>
+
+# Download
+```shell
+huggingface-cli download unsloth/DeepSeek-R1-GGUF --include "DeepSeek-R1-Q8_0/*" --local-dir "/home/t33n/Projects/ai/resources/models/llm/deepseek"
+```
+
+
+
   
 </details>
+
+
+  
+</details>
+
+
+
+
+
+
+
+
 
 
 
