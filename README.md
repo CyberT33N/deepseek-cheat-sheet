@@ -34,6 +34,38 @@ ollama run deepseek-r1:32b
 
 <details><summary>Click to expand..</summary>
 
+# Hardware Resources
+
+| Filename                      | Quant Type | File Size  | Split | Description |
+|--------------------------------|-----------|-----------|-------|-------------|
+| DeepSeek-R1-Q8_0.gguf         | Q8_0      | 713.29GB  | true  | Extremely high quality, generally unneeded but max available quant. |
+| DeepSeek-R1-Q6_K.gguf         | Q6_K      | 550.80GB  | true  | Very high quality, near perfect, recommended. |
+| DeepSeek-R1-Q5_K_M.gguf       | Q5_K_M    | 475.40GB  | true  | High quality, recommended. |
+| DeepSeek-R1-Q5_K_S.gguf       | Q5_K_S    | 461.81GB  | true  | High quality, recommended. |
+| DeepSeek-R1-Q4_1.gguf        | Q4_1      | 419.94GB  | true  | Legacy format, similar performance to Q4_K_S but with improved tokens/watt on Apple silicon. |
+| DeepSeek-R1-Q4_K_M.gguf      | Q4_K_M    | 404.43GB  | true  | Good quality, default size for most use cases, recommended. |
+| DeepSeek-R1-Q4_K_S.gguf      | Q4_K_S    | 380.00GB  | true  | Slightly lower quality with more space savings, recommended. |
+| DeepSeek-R1-Q4_0.gguf        | Q4_0      | 379.03GB  | true  | Legacy format, offers online repacking for ARM and AVX CPU inference. |
+| DeepSeek-R1-IQ4_NL.gguf      | IQ4_NL    | 378.07GB  | true  | Similar to IQ4_XS, but slightly larger. Offers online repacking for ARM CPU inference. |
+| DeepSeek-R1-IQ4_XS.gguf      | IQ4_XS    | 357.13GB  | true  | Decent quality, smaller than Q4_K_S with similar performance, recommended. |
+| DeepSeek-R1-Q3_K_XL.gguf     | Q3_K_XL   | 348.26GB  | true  | Uses Q8_0 for embed and output weights. Lower quality but usable, good for low RAM availability. |
+| DeepSeek-R1-Q3_K_L.gguf      | Q3_K_L    | 347.45GB  | true  | Lower quality but usable, good for low RAM availability. |
+| DeepSeek-R1-Q3_K_M.gguf      | Q3_K_M    | 319.20GB  | true  | Low quality. |
+| DeepSeek-R1-IQ3_M.gguf       | IQ3_M     | 292.09GB  | true  | Medium-low quality, new method with decent performance comparable to Q3_K_M. |
+| DeepSeek-R1-Q3_K_S.gguf      | Q3_K_S    | 289.08GB  | true  | Low quality, not recommended. |
+| DeepSeek-R1-IQ3_XXS.gguf     | IQ3_XXS   | 257.93GB  | true  | Lower quality, new method with decent performance, comparable to Q3 quants. |
+| DeepSeek-R1-Q2_K_L.gguf      | Q2_K_L    | 244.93GB  | true  | Uses Q8_0 for embed and output weights. Very low quality but surprisingly usable. |
+| DeepSeek-R1-Q2_K.gguf        | Q2_K      | 244.03GB  | true  | Very low quality but surprisingly usable. |
+| DeepSeek-R1-IQ2_M.gguf       | IQ2_M     | 217.43GB  | true  | Relatively low quality, uses SOTA techniques to be surprisingly usable. |
+| DeepSeek-R1-IQ2_S.gguf       | IQ2_S     | 197.00GB  | true  | Low quality, uses SOTA techniques to be usable. |
+| DeepSeek-R1-IQ2_XS.gguf      | IQ2_XS    | 195.09GB  | true  | Low quality, uses SOTA techniques to be usable. |
+| DeepSeek-R1-IQ2_XXS.gguf     | IQ2_XXS   | 174.43GB  | true  | Very low quality, uses SOTA techniques to be usable. |
+| DeepSeek-R1-IQ1_M.gguf       | IQ1_M     | 148.88GB  | true  | Extremely low quality, not recommended. |
+| DeepSeek-R1-IQ1_S.gguf       | IQ1_S     | 133.56GB  | true  | Extremely low quality, not recommended. |
+
+
+
+
 # Download
 ```shell
 huggingface-cli download unsloth/DeepSeek-R1-GGUF --include "DeepSeek-R1-Q8_0/*" --local-dir "/home/t33n/Projects/ai/resources/models/llm/deepseek"
