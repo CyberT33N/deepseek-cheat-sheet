@@ -4,6 +4,8 @@
 
 # Deepseek R1
 - https://github.com/deepseek-ai/DeepSeek-R1
+- **Only good responses in englisch or chinese**
+
 
 <details><summary>Click to expand..</summary>
 
