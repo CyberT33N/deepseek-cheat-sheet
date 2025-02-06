@@ -22,9 +22,10 @@
 # Ollama
 - https://ollama.com/library/deepseek-r1:32b
 ```shell
+# ollama run deepseek-r1:14b
 ollama run deepseek-r1:32b
 ```
-- Works with 4090 but not fast. But it is okay :) 
+- 32b Works with 4090 but not fast. But it is okay :)  If you want faster resonse then try 14b
 
 
   
