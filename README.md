@@ -20,10 +20,11 @@
 
 
 # Ollama
-- https://ollama.com/huihui_ai/deepseek-r1-abliterated:32b-qwen-distill
+- https://ollama.com/library/deepseek-r1:32b
 ```shell
-ollama run huihui_ai/deepseek-r1-abliterated:32b-qwen-distill
+ollama run deepseek-r1:32b
 ```
+- Works with 4090 but not fast. But it is okay :) 
 
 
   
