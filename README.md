@@ -6,6 +6,27 @@
 - https://github.com/deepseek-ai/DeepSeek-R1
 
 <details><summary>Click to expand..</summary>
+
+# Hardware Requirements
+
+| **Model**                             | **Parameters (B)** | **VRAM Requirement (GB)** | **Recommended GPU**                  |  
+|----------------------------------------|-------------------|--------------------------|--------------------------------------|  
+| DeepSeek-R1-Distill-Qwen-1.5B         | 1.5               | ~0.7                     | NVIDIA RTX 3060 12GB or higher      |  
+| DeepSeek-R1-Distill-Qwen-7B           | 7                 | ~3.3                     | NVIDIA RTX 3070 8GB or higher       |  
+| DeepSeek-R1-Distill-Llama-8B          | 8                 | ~3.7                     | NVIDIA RTX 3070 8GB or higher       |  
+| DeepSeek-R1-Distill-Qwen-14B          | 14                | ~6.5                     | NVIDIA RTX 3080 10GB or higher      |  
+| DeepSeek-R1-Distill-Qwen-32B          | 32                | ~14.9                    | NVIDIA RTX 4090 24GB                |  
+| DeepSeek-R1-Distill-Llama-70B         | 70                | ~32.7                    | NVIDIA RTX 4090 24GB (x2)           |  
+
+
+# Ollama
+- https://ollama.com/huihui_ai/deepseek-r1-abliterated:32b-qwen-distill
+```shell
+ollama run huihui_ai/deepseek-r1-abliterated:32b-qwen-distill
+```
+
+
+  
 </details>
 
 
