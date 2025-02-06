@@ -10,16 +10,30 @@
 <details><summary>Click to expand..</summary>
 
 
+<br><br>
+<br><br>
+
 
 
 # Ollama
+
+
+## deepseek-r1 (Q4_K_M)
 - https://ollama.com/library/deepseek-r1:32b
 ```shell
-# ollama run deepseek-r1:14b
-ollama run deepseek-r1:32b
+ollama run deepseek-r1:14b
+# ollama run deepseek-r1:32b
 ```
 - 32b Works with 4090 but not fast. But it is okay :)  If you want faster resonse then try 14b
 
+<br><br>
+
+## deepseek-r1-abliterated (Q4_K_M) (abliterated = uncensored)
+- https://ollama.com/huihui_ai/deepseek-r1-abliterated:70b
+```shell
+ollama run huihui_ai/deepseek-r1-abliterated:14b
+```
+- 32b Works with 4090 but not fast. But it is okay :)  If you want faster resonse then try 14b
 
 
 
