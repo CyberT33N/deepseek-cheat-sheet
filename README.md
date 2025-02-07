@@ -20,6 +20,7 @@
 ```shell
 ollama run hengwen/DeepSeek-R1-Distill-Qwen-32B:q4_k_m
 ```
+- Works with RTX 4090 but not that fast
   
 </details>
 
