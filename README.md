@@ -2,6 +2,57 @@
 
 
 
+
+
+
+
+
+
+
+# Deepseek v3
+
+
+<details><summary>Click to expand..</summary>
+
+# Ollama
+
+## DeepSeek-R1-Distill-Qwen-32B (Q4_K_M)
+```shell
+ollama run hengwen/DeepSeek-R1-Distill-Qwen-32B:q4_k_m
+```
+  
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+___
+<br><br>
+<br><br>
+
+
+
+
 # Deepseek R1
 - https://github.com/deepseek-ai/DeepSeek-R1
 - **Only good responses in englisch or chinese**
